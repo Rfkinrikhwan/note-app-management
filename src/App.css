@@ -1,0 +1,239 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+body {
+  background-color: #e3e6e9;
+}
+
+.wrap {
+  padding: 10px 30px;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 50px;
+  gap: 50px;
+}
+
+/* section header */
+.header-content {
+  border-radius: 20px;
+  height: 50px;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: space-between;
+}
+
+.header-content .info-user {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-content .info-user span {
+  font-weight: 500;
+  font-size: 20px;
+}
+
+/* section main content notes */
+.main-content {
+  display: grid;
+  grid-template-columns: 50% auto;
+  gap: 35px;
+}
+
+/* section notes */
+.notes-content {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  gap: 20px;
+}
+
+.notes-content .card-data {
+  padding: 5px;
+  height: 100%;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.notes-content .heading {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: max-content;
+}
+
+/* sectioan add notes */
+.add-notes {
+  background-color: #ffffff;
+  border-radius: 20px;
+  height: 600px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: space-between;
+}
+
+.add-notes button {
+  padding: 10px;
+  width: 100px;
+  border-radius: 5px;
+  border: 1px solid #dcdfe6;
+  cursor: pointer;
+  align-self: self-end;
+  background-color: #92a6f8;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.add-notes .add-title {
+  display: flex;
+  gap: 10px;
+  padding: 15px 0px;
+  border-bottom: 2px solid #dcdfe6;
+}
+
+.add-notes .add-title img {
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.add-notes .add-title input {
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 25px;
+}
+
+.add-notes .add-title .limit {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+}
+
+.add-notes .add-body {
+  padding: 5px 10px 5px 5px;
+}
+
+.add-notes .add-body textarea {
+  padding: 10px;
+  width: 98%;
+  height: 300px;
+  border: none;
+  outline: none;
+}
+
+/* component search */
+.search-wrap {
+  width: 500px;
+  border: 1px Solid #dcdfe6;
+  padding: 8px 15px;
+  display: flex;
+  border-radius: 20px;
+  gap: 10px;
+  align-items: center;
+}
+
+.search-wrap input {
+  border: none;
+  width: 100%;
+  outline: none;
+  padding: 3px;
+}
+
+/* component card note */
+.card-note {
+  border: 1px Solid #dcdfe6;
+  background-color: #e9edfd;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+}
+
+.card-note img {
+  width: 150px;
+  height: 150px;
+  border-radius: 15px;
+}
+
+.card-note .card-note-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.card-note .card-note-content .text h2 {
+  color: #333;
+}
+
+.card-note .card-note-content .text p {
+  color: #9d9d9d;
+  font-size: 13px;
+  text-align: justify;
+}
+
+.card-note .card-note-content .content-bottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-note .card-note-content .content-bottom button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #eb6964;
+}
+
+.card-note .card-note-content .content-bottom .badge-time {
+  background-color: #ffffff;
+  border: 1px Solid #dcdfe6;
+  padding: 5px 15px;
+  width: max-content;
+  border-radius: 50px;
+  font-size: 10px;
+  font-weight: bold;
+  color: #9d9d9d;
+}
+
+/* data not found */
+.data-not-found {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text-not-found {
+  background-color: #e78e8b;
+  width: max-content;
+  padding: 5px 15px;
+  border-radius: 20px;
+  color: #ffffff;
+}
